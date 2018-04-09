@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Udacity Project 3 - Quiz App</string>
+
+    <!-- question 1 -->
+    <string name="q1Question">1. what is the chemical formula for water?</string>
+    <string name="q1Ans1">2 hydrogen, 1 oxygen</string>
+    <string name="q1Opt1">1 hydrogen, 1 oxygen</string>
+    <string name="q1Opt2">1 hydrogen, 2 oxygen</string>
+    <string name="q1Opt3">2 hydrogen, 2 oxygen</string>
+    <!-- question 2 -->
+    <string name="q2Question">2. Which numbers are powers of 2</string>
+    <string name="q2Ans1">8</string>
+    <string name="q2Opt1">12</string>
+    <string name="q2Ans2">64</string>
+    <string name="q2Ans3">128</string>
+    <string name="q2Opt2">225</string>
+
+    <!-- question 3 -->
+    <string name="q3Question">3. What is the name of Luigi\'s Brother?</string>
+    <string name="q3Ans1">mario</string>
+
+    <!-- question 4 -->
+    <string name="q4Question">4. The diagram below shows the collision of two tectonic plates in Asia. \n What is the result of this collision?</string>
+    <string name="q4Opt2">Volcanoes erupt periodically</string>
+    <string name="q4Opt1">The Tibetan Plateau slowly sinks</string>
+    <string name="q4Ans1">The Himalayas increase in height each year</string>
+    <string name="q4Opt3">Glaciers on the Tibetan Plateau melt</string>
+    <string name="q4ImageDesc">collision of two tectonic plates in Asia</string>
+
+    <!-- question 5 -->
+    <string name="q5Question">5. Which characteristic is shared by all cells?</string>
+    <string name="q5Ans1">They need energy</string>
+    <string name="q5Opt1">They reproduce sexually</string>
+    <string name="q5Opt2">They make their own food</string>
+    <string name="q5Opt3">They move from place to place</string>
+
+    <!-- question 6 -->
+    <string name="q6Question">6. Udacity &amp; Google are creating good things!</string>
+    <string name="q6Ans1">True</string>
+    <string name="q6Opt1">False</string>
+    <string name="q6Opt2">I don\'t know</string>
+
+
+    <!-- TEXT -->
+    <string name="reset">reset</string>
+    <string name="submit">submit</string>
+    <string name="y">y</string>
+    <string name="n">n</string>
+    <string name="answerAll">"Please answer All Questions"</string>
+    <string name="txtScore">score</string>
+
+    <string-array name="car_array">
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Benz</item>
+        <item>Ford</item>
+        <item>Toyota</item>
+        <item>Tesla</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+    </string-array>
+
+</resources>
