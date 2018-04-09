@@ -9,36 +9,40 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.Toast;
-import android.widget.Toolbar;
-
 import icepick.Icepick;
 import icepick.State;
 
+/*  aADD TO README GITHUB
+* Final Project for Udacity Android Basics NanoDegree
+*
+*   Project 3 - Quiz App
+*
+* Rubric
+*   https://review.udacity.com/#!/rubrics/158/view
+*
+* Naming Convention to add in readme github
+ * convention XML <view type>(view #><item>(item #>
+*
+*
+*
+*
+  *  */
+
 public class MainActivity extends AppCompatActivity {
-    int numQuestions = 6;  //make sure eack check box is counted as one answer
+    int numQuestions = 6;  //make sure each check box is counted as one answer
     RadioButton radioButton;
     CheckBox checkBox, q2Chk1, q2Chk2, q2Chk3, q2Chk4, q2Chk5;
 
-    @State
-    int numAnswered = 0;    //tally answers
-    @State
-    double numCorrect = 0;
-    @State
-    int progress = 0;
-    @State
-    int q1A, q2A, q4A;
-    @State
-    String q3A;
-    @State
-    String msg = "";
-    @State
-    String results;
-    @State
-    int questionNumber = 1;
-    @State
-    int lastQuestion = 0;
-    @State
-    EditText q3Answer;
+    @State    int numAnswered = 0;    //tally answers
+    @State    double numCorrect = 0;
+    @State    int progress = 0;
+    @State    int q1A, q2A, q4A;
+    @State    String q3A;
+    @State    String msg = "";
+    @State    String results;
+    @State    int questionNumber = 1;
+    @State    int lastQuestion = 0;
+    @State    EditText q3Answer;
 
 
     @Override
@@ -46,22 +50,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Icepick.restoreInstanceState(this, savedInstanceState);  //icepick automatically handles bundling on orientation
         setContentView(R.layout.activity_main);
+
+        //initialize progress bar
         ProgressBar status = findViewById(R.id.progress_bar);
         status.setProgress(0);
         status.setMax(numQuestions);
     }
 
     @Override
-    public void onSaveInstanceState(Bundle outState) {
+    public void onSaveInstanceState(Bundle outState) { //IcePick
         super.onSaveInstanceState(outState);
         Icepick.saveInstanceState(this, outState);
     }
 
     public void btnSubmit(View view) {
-
-        if (questionNumber >= numQuestions) {
-            //grade Q2 checkBox
-            //read checkBox states into variables - ?? can I use arrays on check & radios?
+        if (questionNumber >= numQuestions) {  // try to make sure all questions are answered
+            //grade Q2 checkBox //read checkBox states into variables - ?? can I use arrays on check & radios?
             q2Chk1 = findViewById(R.id.c1q2);  //y
             q2Chk2 = findViewById(R.id.c2q2);
             q2Chk3 = findViewById(R.id.c3q2);   //y
@@ -92,7 +96,10 @@ public class MainActivity extends AppCompatActivity {
             reset();
         } else {
             Toast.makeText(this, R.string.answerAll, Toast.LENGTH_LONG).show();
-        }
+               }
+
+               /*  snackbar */
+
     }
 
     public void btnReset(View view) {
